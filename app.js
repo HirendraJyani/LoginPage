@@ -1,5 +1,7 @@
 //jshint esversion:6
 
+//    https://serene-retreat-03700.herokuapp.com/
+
 require('dotenv').config();
 
 const express = require("express");
@@ -199,6 +201,6 @@ app.post("/login", function(req, res) {
 
 
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("server is running on 3000");
 });
